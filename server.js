@@ -75,6 +75,6 @@ app.post('/api/puzzle', async (req, res) => {
   }
 });
 
-app.listen(port, () => {
-  console.log(`Sunucu http://localhost:${port} adresinde çalışıyor`);
+app.listen(port, '0.0.0.0', () => {
+  console.log(`Server running on port ${port}`);
 });
